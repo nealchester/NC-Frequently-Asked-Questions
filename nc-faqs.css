@@ -1,0 +1,115 @@
+
+.ncfaqs_box {
+  --box-bg-color:none;
+  --box-text-color:inherit;
+  --box-padding: 3em 0;
+  --contain-max-width: 1000px;
+  background:var(--box-bg-color);
+  color:var(--box-text-color);
+  padding:var(--box-padding);
+}
+
+.ncfaqs_box .ncontain {
+  max-width:var(--contain-max-width);
+}
+
+
+.ncfaqs {
+  --heading-size:1em;
+  --heading-text-color:inherit;
+  --heading-border:solid 1px #ddd;
+  --heading-padding:0.75rem;
+  --heading-p-color:inherit;
+  --heading-bg-color: #fff;
+  --heading-bg-color-hover:lightyellow;
+  --heading-bg-color-active:#fff;
+  --transition:0.5s;
+  
+  --content-padding:1.5rem;
+  --content-bg-color:#fff;
+  --content-text-color:inherit;
+  --acc-space:0.75rem;         
+}
+
+.ncfaqs_header { 
+  color:var(--heading-text-color);
+  font-size:var(--heading-size); 
+  cursor:pointer; 
+  border:var(--heading-border); 
+  padding:var(--heading-padding);
+  margin-bottom:0;
+  position:relative;
+  transition:var(--transition);
+  background:var(--heading-bg-color);
+  margin-top:0;
+  display: flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  line-height:1.5;
+}
+
+.ncfaqs_header:not(:first-of-type) {
+  margin-top:var(--acc-space);
+}
+
+.ncfaqs_header:after {
+    transition: var(--transition);
+    content: '\25bc';
+    transform: scale(1,0.5);
+    line-height: normal;
+    opacity: 0.3;
+    color: var(--heading-p-color);
+}
+
+.ncfaqs_header.active:after {
+  transform:rotate(180deg)scale(1,0.5);
+}
+
+.ncfaqs_header.active { 
+  background:var(--heading-bg-color-active);
+}
+.ncfaqs_header:hover { 
+  background:var(--heading-bg-color-hover); 
+}
+
+.ncfaqs_header + .ncfaqs_content {
+  transition: var(--transition);
+  max-height:0;
+  overflow:hidden;
+  border:var(--heading-border); 
+  border-top:0;
+  padding:var(--content-padding);
+  padding-top:0; padding-bottom:0;
+  visibility:hidden;
+  background:var(--content-bg-color);
+  color:var(--content-text-color);
+}
+
+.ncfaqs_header.active + .ncfaqs_content {
+  max-height:1500px;
+  overflow:visible;
+  padding:var(--content-padding);
+  opacity:1;
+  visibility:visible;
+}
+
+.ncfaqs_header.active + .ncfaqs_content > *:last-child  {
+  margin-bottom:0;
+}
+
+.ncfaqs_rmore {
+  font-weight: 500;
+  border-bottom:solid 1px var(--link-color, currentColor);
+}
+
+
+/* For editor only */
+
+#wpwrap .ncfaqs_header {
+  font-size:var(--heading-size) !important; 
+  margin-bottom: 0 !important;
+}
+
+#wpwrap .ncfaqs_header:not(:first-of-type) {
+  margin-top:var(--acc-space) !important;
+}
