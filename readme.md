@@ -12,7 +12,7 @@ The block allows you to select answers and group them within an accordion. When 
 * Set the heading type (h1-h6) supports technical SEO
 * Block styling options
 
-**Note:** Set the block the full width for best display results.
+**Note:** Set the block to "full width" for the best display results.
 
 ## Customize
 
