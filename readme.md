@@ -10,7 +10,9 @@ The block allows you to select answers and group them within an accordion. When 
 * Set truncate character limit (if applicable)
 * If truncated, a "read more" link will connect the user to the full post
 * Set the heading type (h1-h6) supports technical SEO
-* And more
+* Block styling options
+
+**Note:** Set the block the full width for best display results.
 
 ## Customize
 
