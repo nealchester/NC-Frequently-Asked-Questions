@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: NC Frequently Asked Questions
-* Plugin URI: http://nealchester.com
+* Plugin URI: https://github.com/nealchester/NC-Frequently-Asked-Questions
 * Description: Creates a custom post type to store FAQs (Frequently Asked Questions) and call them with a special gutenberg block. It uses the <em>single.php</em> template file to display the content. Copy the <em>single.php</em> file and rename it <em>single-nc_faqs.php</em> to customize the FAQs display. You can do the same for the archive <em>archive-nc_faqs.php. <strong>NOTE:</strong> Usage of the blocks requires Advanced Custom Fields PRO</em>.
 * Version: 1.0
 * Author: Neal Chester
